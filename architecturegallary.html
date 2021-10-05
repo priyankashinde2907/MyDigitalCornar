@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8"><!--imp(website worke anywhere)-->
+        <meta name="viewport" content="width=device-width,initial-scale=1"><!--imp(All page responsive & provide width and all data where this website are open like,phone,tab,laptop)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--top tab icon-->
+        <link rel="icon" href="images/icons/indexicon5.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css"><!--imp-->
+        <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+         <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
+          <!--Font style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+              width: 100%;
+              height: 100%;
+            }
+            .background{
+                background-color:black;
+                color: white;
+                 }
+             #navbarclr{
+              background-color: transparent;
+              color: #777;
+            }
+            #multicolortext 
+         {
+          font-family: 'Akronim', cursive;
+          color: black;
+         }  
+                #navbarSupportedContent{
+                  color: black;
+                }
+                .overlay {
+                            position: absolute; 
+                            bottom: 0; 
+                            background: rgb(0, 0, 0);
+                            background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                            color: #f1f1f1; 
+                            width: 100%;
+                            transition: .5s ease;
+                            opacity:0;
+                            color: white;
+                            font-size: 20px;
+                            padding: 20px;
+                            text-align: center;
+                    }
+
+            #imagehover:hover .overlay {
+                            opacity: 1;
+                            }
+
+                          
+* {
+  box-sizing: border-box;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration:none;
+  transition: background-color .3s;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #ffc107;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+#centerpage{
+  margin-left: 42%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+    </head>
+    <body class="background">
+       <header>
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-warning" id="navbarclr">
+          <div class="container ">
+             <img src="images/icons/indexicon5.png" alt="" style="width:5%; height:5%;">
+          <!--<img src="images/icons/indexicon4.png" alt="" style="width:5%; height:5%; margin-right:6px;">--> 
+          
+            <a class="navbar-brand" href="#"  id="multicolortext"><b>MY DIGITAL CORNER</b></a>
+            <button class="navbar-toggler" type="button" onclick="myFunction()" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myTopnav" >
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="home.html" id="navbarSupportedContent"><img  src="images/icons/house.png" style="width:30px;height:30px;"><b>HOME</b> </a>
+                </li>
+            
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html" id="navbarSupportedContent"><img  src="images/icons/gallery.png" style="width:30px;height:30px;"> <b>GALLERY</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html" id="navbarSupportedContent"><img  src="images/icons/service.png" style="width:30px;height:30px;"> <b>SERVICES</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html" id="navbarSupportedContent"><img  src="images/icons/about-us.png" style="width:30px;height:30px;"> <b>ABOUT</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html" id="navbarSupportedContent"><img  src="images/icons/contact.png" style="width:30px;height:30px;"> <b>CONTACT</b></a>
+                </li>
+                
+             <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <a class="nav-link" href="#" id="navbarSupportedContent"><img  src="images/icons/searchicon.png" style="width:30px;height:30px;"></a>
+              </form>
+              <div>
+                <img src="images/icons/twittericon.png" style="width: 30px; height: 30px;">
+              <img src="images/icons/facebookicon.png" style="width: 20px; height: 20px;">
+              <img src="images/icons/instagramicon.png" style="width: 30px; height: 30px;">
+              <img src="images/icons/youtubeicon.png" style="width: 30px; height: 30px;"></div> 
+                </div>
+            </div>
+          </div>
+        </nav>
+<!--slide images-->
+
+<!--Gallery start-->
+<section>
+    <div class="container">
+        <h1 class="text-center text-capitalize pt-4">Architecture Gallery</h1>
+        <hr class="w-25 mx-auto">
+<div>
+  <iframe src="https://giphy.com/embed/3o7abyHmNHD1F3uiMU" width="100%" height="320" frameBorder="0" class="giphy-embed" 
+  allowFullScreen></iframe><p><a href="https://giphy.com/gifs/geometric-circle-square-3o7abyHmNHD1F3uiMU"></a></p>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+      <img src="images/architectureg1.jpg" class="img-fluid">
+      <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+        <img  width="40px" height="40px" src="images/icons/download.png"></a>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+        <img src="images/architectureg12.jpg" class="img-fluid">
+        <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+          <img  width="40px" height="40px" src="images/icons/download.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+        <img src="images/architectureg5.jpg" class="img-fluid">
+        <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+          <img  width="40px" height="40px" src="images/icons/download.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+        <img src="images/architectureg7.jpg" class="img-fluid">
+        <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+          <img  width="40px" height="40px" src="images/icons/download.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+        <img src="images/architectureg9.jpg" class="img-fluid">
+        <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+          <img  width="40px" height="40px" src="images/icons/download.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+        <img src="images/architectureg8.jpg" class="img-fluid">
+        <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+          <img  width="40px" height="40px" src="images/icons/download.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+        <img src="images/architectureg10.jpg" class="img-fluid">
+        <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+          <img  width="40px" height="40px" src="images/icons/download.png"></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+          <img src="images/architectureg3.jpg" class="img-fluid">
+          <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+            <img  width="40px" height="40px" src="images/icons/download.png"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+          <img src="images/architectureg11.jpg" class="img-fluid">
+          <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+            <img  width="40px" height="40px" src="images/icons/download.png"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+          <img src="images/architectureg6.jpg" class="img-fluid">
+          <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+            <img  width="40px" height="40px" src="images/icons/download.png"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+          <img src="images/architectureg4.jpg" class="img-fluid">
+          <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+            <img  width="40px" height="40px" src="images/icons/download.png"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-2 col-12 mb-4" id="imagehover">
+          <img src="images/architectureg2.jpg" class="img-fluid">
+          <div class="overlay"><a class="nav-link" href="#" ><img  width="50px" height="50px" src="images/icons/heart1.png">
+            <img  width="40px" height="40px" src="images/icons/download.png"></a>
+          </div>
+        </div>
+        
+</div>
+</div>
+</section>
+<!--Gallery End-->
+
+<section>
+  <!-- previous next page-->
+  <div class="pagination" id="centerpage">
+    <a href="index.html">&laquo;</a>
+    <a href="home.html" >1</a>
+    <a href="gallery.html"class="active" >2</a>
+    <a href="services.html" >3</a>
+    <a href="aboutus.html" >4</a>
+    <a href="contact.html">&raquo;</a>
+  </div>
+  <!--previous next page end-->
+</section>
+
+<script>
+ function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+<footer>
+  <div class="container-fluid text-center"id="navbarclr" >
+    <p>
+     @ Copyright &copy;<script data-cfasync="false"></script><script>document.write(new Date().getFullYear());
+      </script> All rights reserved <i class="icon-heart-o" aria-hidden="true"></i><img src="images/icons/heart.png" width="1%" height="1%"> </p>
+  </div>
+</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ </body>
+</html>
